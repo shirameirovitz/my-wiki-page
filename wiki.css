@@ -1,16 +1,42 @@
 
 body {
-    background-image:url('sky.jpg')
+background-image:url('sky.jpg');
+background-position-x: 0%;
 }
+.navbar{
+    top: 0;
+    right: 0;
+    position: fixed; 
+    width:100%;
+    height: 150px;
+    clear: both;
+    background-color: #333;
+}
+  .navbar a {
+    display:inline-block;
+    vertical-align: top;
+  color: white;
+  text-align: center;
+  padding: 18px 18px;
+  text-decoration: none;
+  margin-right: 20px;
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  line-height: 80px ;
+  height: 110px;
+  font-family: Times, serif;
+  }
+  .navbar a:hover {
+    background-color: #111;
+  }
+  
 /*logo*/
-#header-img {
-    height: 10%;
-    width: 10%;
-}
-#image {
-    display:block; 
-    margin: auto;
-    width: 100%;
+.logo img{
+    display: inline-flex;
+    vertical-align: top;
+    margin-right: 20px;
+    margin-top:15px ;
 }
 /*it is the card photo*/
 div.polaroid {
@@ -21,14 +47,16 @@ div.polaroid {
     margin-bottom: 20px;
   }
   
-  div.container {
+  div .container {
     text-align: center;
-    padding: 10px 20px;
+    padding: 10px 70px;
   }
-  .container {
-    position: relative;
-  }/*my contact*/
-  ul {
+  figure p {
+    font-size: 14px;
+  }
+  
+  /*my contact*/
+  ul  {
     list-style-type: none;
   }
   .center {
@@ -41,9 +69,42 @@ div.polaroid {
     }
   #imgblack { 
     position: relative; 
-    margin-left: 85%;
+    margin-left: 85.5%;
     margin-bottom: 0%;
     width: 15%;
     height: 15%;
     opacity:0.8;
+  }
+  #welcome-section {
+      margin-top: 200px;
+      font-family:Times, serif;
+  }
+  h1 {
+      font-size: 60px;
+  }
+  p {
+    font-size: 24px;
+    line-height: 1.6em;  
+  }
+  table, td, th {
+    border: 1px solid black;
+  }
+  table a {
+    font-family:Times, serif;
+    font-size: 18px;
+    color: #4d0000;
+    text-decoration: none;
+
+  }
+  
+  table {
+    border-collapse: collapse;
+    width: 45%;
+  }
+  
+  th {
+    height: 100px;
+  }
+  td{
+    height: 50px;   
   }
