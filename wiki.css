@@ -1,9 +1,49 @@
-ul {
-    padding: 0 0 50px 0;
-    display: inline-block;
-    background: url('sleep.png');
-    color: white 
-}
+
 body {
     background-image:url('sky.jpg')
 }
+/*logo*/
+#header-img {
+    height: 10%;
+    width: 10%;
+}
+#image {
+    display:block; 
+    margin: auto;
+    width: 100%;
+}
+/*it is the card photo*/
+div.polaroid {
+    width: 20%;
+    height: 20%;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 20px;
+  }
+  
+  div.container {
+    text-align: center;
+    padding: 10px 20px;
+  }
+  .container {
+    position: relative;
+  }/*my contact*/
+  ul {
+    list-style-type: none;
+  }
+  .center {
+    position: absolute;
+    top: 20%;
+    left: 83%;
+    font-size: 18px;
+    color:white;
+    line-height: 1.6em;
+    }
+  #imgblack { 
+    position: relative; 
+    margin-left: 85%;
+    margin-bottom: 0%;
+    width: 15%;
+    height: 15%;
+    opacity:0.8;
+  }
