@@ -1,7 +1,10 @@
 
 body {
 background-image:url('sky.jpg');
-background-position-x: 0%;
+background-repeat:inherit;
+padding-top: 200px;
+font-family:Times, serif;
+margin-left: 20px;
 }
 .navbar{
     top: 0;
@@ -58,27 +61,22 @@ div.polaroid {
   /*my contact*/
   ul  {
     list-style-type: none;
+    padding: 20px
   }
   .center {
-    position: absolute;
-    top: 20%;
-    left: 83%;
+    position: relative;
+    margin-left: 83%;
+    background-image: url('black.jpg');
+    background-size:300px ;
+    background-repeat: no-repeat;
     font-size: 18px;
     color:white;
     line-height: 1.6em;
+    top: 0;
+    bottom: 0;
+   
     }
-  #imgblack { 
-    position: relative; 
-    margin-left: 85.5%;
-    margin-bottom: 0%;
-    width: 15%;
-    height: 15%;
-    opacity:0.8;
-  }
-  #welcome-section {
-      margin-top: 200px;
-      font-family:Times, serif;
-  }
+  
   h1 {
       font-size: 60px;
   }
@@ -90,7 +88,6 @@ div.polaroid {
     border: 1px solid black;
   }
   table a {
-    font-family:Times, serif;
     font-size: 18px;
     color: #4d0000;
     text-decoration: none;
@@ -101,10 +98,27 @@ div.polaroid {
     border-collapse: collapse;
     width: 45%;
   }
-  
   th {
     height: 100px;
   }
   td{
     height: 50px;   
   }
+  form {
+    font-family:Times, serif;
+    font-size: 24px;
+    margin-bottom: 40px;
+  }
+  #submit {
+background-color: #333;
+color: white;
+padding: 8px;
+border: none;
+  }
+ #mail{
+    padding: 8px; 
+ }
+  
+
+
+  
