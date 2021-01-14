@@ -4,3 +4,6 @@ ul {
     background: url('sleep.png');
     color: white 
 }
+body {
+    background-image:url('sky.jpg')
+}
