@@ -1,7 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
     <link rel="stylesheet" type="text/css" href="wiki.css">
-<head>
+    <style>
+        h1 {
+   animation-duration: 3s;
+   animation-name: slidein;
+  }
+  
+  @keyframes slidein {
+   from {
+     margin-left: 100%;
+     width: 300%;
+   }
+  
+   to {
+     margin-left: 0%;
+     width: 100%;
+   }
+  } 
+     </style>
+    <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
@@ -54,9 +72,12 @@
         K. Dick, such as The Three Stigmata of Palmer Eldritch and Ubik. Similar themes were 
         explored by Jorge Luis Borges, for instance in The Circular Ruins.
     </p>
-   <img src="animate.jpg" alt="animate-photo" width="600px">
-</br>
-
+    <div class="image-wrapper">
+   <img class="image-1" src="animate.jpg" alt="animate-photo" width="600px">
+   <img class="image-2" src="animate.jpg" alt="animate-photo" width="600px">
+   <img class="image-3" src="animate.jpg" alt="animate-photo" width="600px">
+   <img class="image-4" src="animate.jpg" alt="animate-photo" width="600px">
+</div>
 
 </html>
 
