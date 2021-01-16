@@ -2,8 +2,9 @@
     --gray: #333;
     --white: #ffffff;}
 body {
-background-image:url('sky.jpg');
-background-repeat:inherit;
+background-image:url('pixele.jpg');
+background-repeat:no-repeat;
+background-size:cover;
 padding-top: 200px;
 font-family:Times, serif;
 margin-left: 20px;
@@ -61,23 +62,25 @@ div.polaroid {
   }
   
   /*my contact*/
-  ul  {
-    list-style-type: none;
-    padding: 20px
+  .flex-container {
+    display: flex;
+    flex-wrap: nowrap;
+    background-color:#d98cb3;
   }
-  .center {
-    position: relative;
-    margin-left: 83%;
-    background-image: url('black.jpg');
-    background-size:300px ;
-    background-repeat: no-repeat;
-    font-size: 18px;
-    color:white;
-    line-height: 1.6em;
-    top: 0;
-    bottom: 0;
-   
-    }
+  
+  .flex-container > div {
+    background-color: #ffcce6;
+    width: 50%;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+  }
+  #contact {
+      margin-left: 40%;
+      color:#cc6699;
+      font-size: 40px;
+  }
   
   h1 {
       font-size: 60px;
@@ -93,9 +96,14 @@ div.polaroid {
     font-size: 18px;
     color: #4d0000;
     text-decoration: none;
-
+    
   }
-  
+  table a:hover {
+color:var(--white);
+  }
+  table a:active {
+    color:hotpink;
+  }
   table {
     border-collapse: collapse;
     width: 45%;
@@ -117,60 +125,7 @@ color: white;
 padding: 8px;
 border: none;
   }
-  /*animate image*/
-  .image-wrapper {
-    width: 600px;
-    height: 400px;
-    position: relative;
-    margin: 30vh auto;
-  }
-  
-  .image-wrapper img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    transform-origin: left;
-  }
-  
-  .image-1 {
-    clip-path: polygon(0 0, 0 32%, 28% 0);
-    transform: translate(-10px, -10px);
-    transition: 300ms ease;
-transform:300ms ease ;
-    transform-origin: top;
-  }
-    .image-wrapper:hover & {
-      transform: translate(0,0);
-    }
-  
-  .image-2 {
-    clip-path: polygon(28% 0, 0 32%, 0 100%, 17% 100%, 90% 0);
-    transform: translate(-30px, 5px);
-    transition: transform 300ms ease;
-  }
-    .image-wrapper:hover & {
-      transform: translate(0,0);
-    }
-  
-  .image-3 {
-    clip-path: polygon(100% 0, 100% 65%, 74% 100%, 17% 100%, 90% 0);
-    transform: translate(-15px, -10px);
-    transition: transform 300ms ease;
-  }
-    .image-wrapper:hover & {
-      transform: translate(0,0);
-    }
-  
-  .image-4 {
-    clip-path: polygon(100% 65%, 74% 100%, 100% 100%);
-    transform: translate(-32px, 5px);
-    transition: transform 300ms ease;
-    transform-origin: top;
-  }
-    .image-wrapper:hover & {
-      transform: translate(0,0);
-    }
-  
+
   
 
 
