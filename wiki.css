@@ -1,26 +1,45 @@
 :root {
     --gray: #333;
     --white: #ffffff;}
+    * {
+      box-sizing: border-box;
+    }
 body {
 background-image:url('pixele.jpg');
 background-repeat:no-repeat;
 background-size:cover;
-padding-top: 150px;
+padding-top: 10%;
 font-family:Times, serif;
 margin-left: 20px;
 }
+h1 {
+  animation-duration: 3s;
+  animation-name: slidein;
+ }
+ 
+ @keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+ 
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+ } 
 .navbar{
     top: 0;
     right: 0;
+    left:0;
+    padding-bottom: 0;
     position: fixed; 
-    width:99.3vw;
-    height: 13vh;
-    clear: both;
+    
     background-color: var(--gray);
+    overflow: hidden;
 }
   .navbar a {
-    display:inline-block;
-    vertical-align: top;
+  display: block;
   color:var(--white);
   text-align: center;
   padding: 18px 18px;
@@ -30,35 +49,22 @@ margin-left: 20px;
   letter-spacing: 3px;
   line-height: 9vh ;
   font-family: Times, serif;
+  float: left;
   }
   .navbar a:hover {
     background-color: #111;
   }
+  @media screen and (max-width: 800px) {
+    .navbar a {
+      float: none;
+      width: 100%;
+    }
+  }
   
-/*logo*/
-.logo img{
-    display: inline-flex;
-    vertical-align: top;
-    margin-right: 40px;
-    margin-top:15px ;
+#jacob {
+  font-size: 12px
+
 }
-/*it is the card photo*/
-div.polaroid {
-    width: 20%;
-    height: 20%;
-    background-color: var(--white);
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    margin-bottom: 20px;
-  }
-  
-  div .container {
-    text-align: center;
-    padding: 10px 70px;
-  }
-  figure p {
-    font-size: 14px;
-  }
-  
   /*my contact*/
   .flex-container {
     display: flex;
